@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.shajid.app.smart_retail_inventory_system.controller.AuthController"
+            prefWidth="600" prefHeight="400">
+
+    <!-- Background Gradient -->
+    <children>
+        <VBox alignment="CENTER" spacing="20" AnchorPane.topAnchor="0.0"
+              AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+
+            <!-- Login Card -->
+            <VBox fx:id="loginCard" alignment="CENTER" spacing="20"
+                  styleClass="login-card">
+
+                <!-- Logo / Title -->
+                <Label text="Welcome Back" style="-fx-font-size: 28px; -fx-font-weight: bold;"/>
+
+                <!-- Username Field -->
+                <TextField fx:id="usernameField" promptText="Username" styleClass="text-field"/>
+
+                <!-- Password Field -->
+                <PasswordField fx:id="passwordField" promptText="Password" styleClass="text-field"/>
+
+                <!-- Login Button -->
+                <Button fx:id="loginButton" text="Login" onAction="#handleLogin" styleClass="button"/>
+
+                <!-- Forgot Password Link -->
+                <Hyperlink text="Forgot Password?" style="-fx-font-size: 12px;"/>
+
+            </VBox>
+        </VBox>
+    </children>
+</AnchorPane>

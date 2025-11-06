@@ -1,0 +1,20 @@
+.root {
+    -fx-background-color: linear-gradient(to bottom, #1E1E2F, #2E2E4F);
+}
+
+.login-card {
+    -fx-background-color: white;
+    -fx-background-radius: 20;
+    -fx-padding: 30;
+}
+
+.text-field {
+    -fx-background-radius: 10;
+    -fx-padding: 10;
+}
+
+.button {
+    -fx-background-color: #4C7BF3;
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+}
